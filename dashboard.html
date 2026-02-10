@@ -1,30 +1,171 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>LMS | Dashboard</title>
-    <link rel="stylesheet" href="css/layout.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Dashboard</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
+
 <body>
-    <nav class="sidebar">
-        <h2>LMS Portal</h2>
-        <ul>
-            <li><a href="dashboard.html" class="active">Dashboard</a></li>
-            <li><a href="courses.html">My Courses</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="profile.html">Profile</a></li>
-        </ul>
-    </nav>
-    <main class="content">
-        <header>
-            <h1>Welcome Back, Student</h1>
-        </header>
-        <div class="stats-grid">
-            <div class="card"><h3>4</h3><p>Active Courses</p></div>
-            <div class="card"><h3>12</h3><p>Pending Tasks</p></div>
-            <div class="card"><h3>3.8</h3><p>Current GPA</p></div>
-        </div>
-    </main>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <span>LMS Pro</span>
+            </div>
+            <nav class="flex flex-col gap-sm" style="padding: 0 var(--spacing-sm);">
+                <a href="dashboard.html" class="nav-link active">
+                    <span class="nav-icon">🏠</span> Dashboard
+                </a>
+                <a href="courses.html" class="nav-link">
+                    <span class="nav-icon">📚</span> Courses
+                </a>
+                <a href="assignments.html" class="nav-link">
+                    <span class="nav-icon">📝</span> Assignments
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <span class="nav-icon">👤</span> Profile
+                </a>
+            </nav>
+            <div style="margin-top: auto; padding: var(--spacing-md);">
+                <a href="index.html" class="nav-link" style="color: var(--text-muted);">
+                    <span class="nav-icon">🚪</span> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div>
+                    <h2>Welcome back, Student!</h2>
+                    <p class="text-muted">Here's what's happening with your courses today.</p>
+                </div>
+                <div class="flex items-center gap-md">
+                    <button class="btn btn-outline">🔔</button>
+                    <div
+                        style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+                        JS
+                    </div>
+                </div>
+            </header>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-3 gap-lg" style="margin-bottom: var(--spacing-xl);">
+                <div class="card">
+                    <div class="flex justify-between items-center mb-sm">
+                        <h3 style="font-size: 1rem; color: var(--text-muted); margin: 0;">In Progress</h3>
+                        <span style="font-size: 1.5rem;">📚</span>
+                    </div>
+                    <p style="font-size: 2rem; font-weight: bold; margin: 0;">4</p>
+                    <p class="text-sm text-muted">+1 new this month</p>
+                </div>
+                <div class="card">
+                    <div class="flex justify-between items-center mb-sm">
+                        <h3 style="font-size: 1rem; color: var(--text-muted); margin: 0;">Completed</h3>
+                        <span style="font-size: 1.5rem;">✅</span>
+                    </div>
+                    <p style="font-size: 2rem; font-weight: bold; margin: 0;">12</p>
+                    <p class="text-sm text-muted">Last completed: CSS Grid</p>
+                </div>
+                <div class="card">
+                    <div class="flex justify-between items-center mb-sm">
+                        <h3 style="font-size: 1rem; color: var(--text-muted); margin: 0;">Average Grade</h3>
+                        <span style="font-size: 1.5rem;">🏆</span>
+                    </div>
+                    <p style="font-size: 2rem; font-weight: bold; margin: 0;">85%</p>
+                    <p class="text-sm text-muted">Top 10% of class</p>
+                </div>
+            </div>
+
+            <!-- Dashboard Content Grid -->
+            <div class="grid grid-cols-2 gap-lg" style="grid-template-columns: 2fr 1fr;">
+                <!-- Recent Courses / Activity -->
+                <div class="flex flex-col gap-lg">
+                    <div class="flex justify-between items-center">
+                        <h3>Continue Learning</h3>
+                        <a href="courses.html" class="text-primary text-sm font-bold">View All</a>
+                    </div>
+
+                    <!-- Course Item -->
+                    <div class="card flex gap-md items-center">
+                        <div
+                            style="width: 80px; height: 80px; background-color: var(--accent-color); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                            JS
+                        </div>
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0 0 0.25rem 0;">Advanced JavaScript Patterns</h4>
+                            <p class="text-sm text-muted" style="margin-bottom: 0.5rem;">Module 3: Closures</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary">Resume</a>
+                    </div>
+
+                    <!-- Course Item -->
+                    <div class="card flex gap-md items-center">
+                        <div
+                            style="width: 80px; height: 80px; background-color: var(--secondary-color); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                            UX
+                        </div>
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0 0 0.25rem 0;">User Experience Design</h4>
+                            <p class="text-sm text-muted" style="margin-bottom: 0.5rem;">Module 5: Wireframing</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary">Resume</a>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar / Deadlines -->
+                <div class="flex flex-col gap-lg">
+                    <h3>Upcoming Deadlines</h3>
+
+                    <div class="card">
+                        <ul class="flex flex-col gap-md">
+                            <li class="flex gap-sm items-start">
+                                <div
+                                    style="min-width: 4px; height: 40px; background-color: var(--secondary-color); border-radius: var(--radius-full);">
+                                </div>
+                                <div>
+                                    <h5 style="margin: 0; font-size: 0.9rem;">UI Component System</h5>
+                                    <p class="text-sm text-muted" style="margin: 0;">Due Today, 11:59 PM</p>
+                                </div>
+                            </li>
+                            <hr style="border: 0; border-top: 1px solid var(--border-color);">
+                            <li class="flex gap-sm items-start">
+                                <div
+                                    style="min-width: 4px; height: 40px; background-color: var(--accent-color); border-radius: var(--radius-full);">
+                                </div>
+                                <div>
+                                    <h5 style="margin: 0; font-size: 0.9rem;">JavaScript Quiz</h5>
+                                    <p class="text-sm text-muted" style="margin: 0;">Due Tomorrow</p>
+                                </div>
+                            </li>
+                            <hr style="border: 0; border-top: 1px solid var(--border-color);">
+                            <li class="flex gap-sm items-start">
+                                <div
+                                    style="min-width: 4px; height: 40px; background-color: var(--primary-color); border-radius: var(--radius-full);">
+                                </div>
+                                <div>
+                                    <h5 style="margin: 0; font-size: 0.9rem;">Final Project Proposal</h5>
+                                    <p class="text-sm text-muted" style="margin: 0;">Due in 5 days</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+
 </html>

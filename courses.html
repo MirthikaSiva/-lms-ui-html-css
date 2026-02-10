@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Courses</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <span>LMS Pro</span>
+            </div>
+            <nav class="flex flex-col gap-sm" style="padding: 0 var(--spacing-sm);">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="nav-icon">🏠</span> Dashboard
+                </a>
+                <a href="courses.html" class="nav-link active">
+                    <span class="nav-icon">📚</span> Courses
+                </a>
+                <a href="assignments.html" class="nav-link">
+                    <span class="nav-icon">📝</span> Assignments
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <span class="nav-icon">👤</span> Profile
+                </a>
+            </nav>
+            <div style="margin-top: auto; padding: var(--spacing-md);">
+                <a href="index.html" class="nav-link" style="color: var(--text-muted);">
+                    <span class="nav-icon">🚪</span> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div>
+                    <h2>My Courses</h2>
+                    <p class="text-muted">Manage your learning journey.</p>
+                </div>
+                <!-- Search Bar -->
+                <div class="flex gap-md" style="width: 300px;">
+                    <input type="text" class="input" placeholder="Search courses...">
+                </div>
+            </header>
+
+            <!-- Course Grid -->
+            <div class="grid grid-cols-3 gap-lg">
+                <!-- Course Card 1 -->
+                <div class="card flex flex-col h-full" style="height: 100%;">
+                    <div
+                        style="height: 140px; background-color: var(--accent-color); border-radius: var(--radius-md); margin-bottom: var(--spacing-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        JS
+                    </div>
+                    <h3 class="card-title">Advanced JavaScript</h3>
+                    <p class="text-muted text-sm" style="margin-top: 0.5rem; flex-grow: 1;">Master closures, prototypes,
+                        and async patterns.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <div class="flex justify-between text-sm text-muted mb-xs" style="margin-bottom: 0.25rem;">
+                            <span>Progress</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-bar mb-md" style="margin-bottom: 1rem;">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary" style="width: 100%;">Continue</a>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="card flex flex-col h-full" style="height: 100%;">
+                    <div
+                        style="height: 140px; background-color: var(--secondary-color); border-radius: var(--radius-md); margin-bottom: var(--spacing-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        UX
+                    </div>
+                    <h3 class="card-title">UX Design Fundamentals</h3>
+                    <p class="text-muted text-sm" style="margin-top: 0.5rem; flex-grow: 1;">Learn to create user-centric
+                        digital experiences.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <div class="flex justify-between text-sm text-muted mb-xs" style="margin-bottom: 0.25rem;">
+                            <span>Progress</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="progress-bar mb-md" style="margin-bottom: 1rem;">
+                            <div class="progress-fill" style="width: 40%;"></div>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary" style="width: 100%;">Continue</a>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="card flex flex-col h-full" style="height: 100%;">
+                    <div
+                        style="height: 140px; background-color: var(--primary-color); border-radius: var(--radius-md); margin-bottom: var(--spacing-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        CSS
+                    </div>
+                    <h3 class="card-title">Modern CSS Layouts</h3>
+                    <p class="text-muted text-sm" style="margin-top: 0.5rem; flex-grow: 1;">Grid, Flexbox, and
+                        responsive design systems.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <div class="flex justify-between text-sm text-muted mb-xs" style="margin-bottom: 0.25rem;">
+                            <span>Progress</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="progress-bar mb-md" style="margin-bottom: 1rem;">
+                            <div class="progress-fill" style="width: 100%; background-color: #10b981;"></div>
+                        </div>
+                        <button class="btn btn-outline" style="width: 100%;">Review</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 4 -->
+                <div class="card flex flex-col h-full" style="height: 100%;">
+                    <div
+                        style="height: 140px; background-color: #f59e0b; border-radius: var(--radius-md); margin-bottom: var(--spacing-md); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                        PY
+                    </div>
+                    <h3 class="card-title">Python for Data Science</h3>
+                    <p class="text-muted text-sm" style="margin-top: 0.5rem; flex-grow: 1;">Data analysis with Pandas
+                        and NumPy.</p>
+                    <div style="margin-top: var(--spacing-md);">
+                        <div class="flex justify-between text-sm text-muted mb-xs" style="margin-bottom: 0.25rem;">
+                            <span>Progress</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="progress-bar mb-md" style="margin-bottom: 1rem;">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <button class="btn btn-outline" style="width: 100%;">Start</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

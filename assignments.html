@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Assignments</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <span>LMS Pro</span>
+            </div>
+            <nav class="flex flex-col gap-sm" style="padding: 0 var(--spacing-sm);">
+                <a href="dashboard.html" class="nav-link">
+                    <span class="nav-icon">🏠</span> Dashboard
+                </a>
+                <a href="courses.html" class="nav-link">
+                    <span class="nav-icon">📚</span> Courses
+                </a>
+                <a href="assignments.html" class="nav-link active">
+                    <span class="nav-icon">📝</span> Assignments
+                </a>
+                <a href="profile.html" class="nav-link">
+                    <span class="nav-icon">👤</span> Profile
+                </a>
+            </nav>
+            <div style="margin-top: auto; padding: var(--spacing-md);">
+                <a href="index.html" class="nav-link" style="color: var(--text-muted);">
+                    <span class="nav-icon">🚪</span> Logout
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div>
+                    <h2>Assignments</h2>
+                    <p class="text-muted">Track your tasks and deadlines.</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Submit New</button>
+                </div>
+            </header>
+
+            <div class="card">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="text-align: left; border-bottom: 2px solid var(--border-color);">
+                            <th style="padding: 1rem;">Assignment</th>
+                            <th style="padding: 1rem;">Course</th>
+                            <th style="padding: 1rem;">Due Date</th>
+                            <th style="padding: 1rem;">Status</th>
+                            <th style="padding: 1rem;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;">
+                                <div class="font-bold">UI Component System</div>
+                                <div class="text-sm text-muted">Create a button and card component</div>
+                            </td>
+                            <td style="padding: 1rem;">UX Design</td>
+                            <td style="padding: 1rem;">Oct 24, 2023</td>
+                            <td style="padding: 1rem;"><span class="badge badge-warning">Pending</span></td>
+                            <td style="padding: 1rem;"><button class="btn btn-outline"
+                                    style="padding: 0.25rem 0.75rem;">Submit</button></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 1rem;">
+                                <div class="font-bold">JavaScript Quiz</div>
+                                <div class="text-sm text-muted">Multiple choice questions on closures</div>
+                            </td>
+                            <td style="padding: 1rem;">Advanced JS</td>
+                            <td style="padding: 1rem;">Oct 25, 2023</td>
+                            <td style="padding: 1rem;"><span class="badge badge-success">Submitted</span></td>
+                            <td style="padding: 1rem;"><button class="btn btn-outline" style="padding: 0.25rem 0.75rem;"
+                                    disabled>View</button></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem;">
+                                <div class="font-bold">Grid Layout Exercise</div>
+                                <div class="text-sm text-muted">Build a responsive photo gallery</div>
+                            </td>
+                            <td style="padding: 1rem;">Modern CSS</td>
+                            <td style="padding: 1rem;">Oct 20, 2023</td>
+                            <td style="padding: 1rem;"><span class="badge badge-success">Graded: 95/100</span></td>
+                            <td style="padding: 1rem;"><button class="btn btn-outline"
+                                    style="padding: 0.25rem 0.75rem;">Feedback</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
