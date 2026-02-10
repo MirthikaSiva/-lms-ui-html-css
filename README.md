@@ -1,26 +1,19 @@
-University LMS — Minimalist UI
-A professional, responsive Learning Management System built with vanilla HTML5 and CSS3. This project focuses on an elite architectural aesthetic with interactive micro-animations.
+Project Summary: University LMS
+A professional, client-ready academic portal developed with Vanilla HTML5 and CSS3. This project delivers an elite user experience through minimalist architecture and fluid interactivity.
 
-🚀 Key Highlights
-Login Interface: Focused centered-card layout with integrated authentication inputs.
+Key Highlights
+Minimalist Aesthetic: High-contrast design using a monochromatic palette with Indigo accents.
 
-Dashboard Hub: CSS Grid architecture featuring real-time stat cards and progress bars.
+Interactive UX: Smooth micro-animations and hover-lift effects for a premium feel.
 
-Course Catalog: Interactive module grid with dynamic icon coding (JS, UX, CSS, PY).
+Responsive Layout: Fully optimized for all devices using CSS Grid and Flexbox.
 
-Learning View: High-end two-column layout with collapsible syllabus accordions.
+Functional Modules
+Dashboard: Real-time stat cards and visual progress trackers.
 
-Task Manager: Professional data table with color-coded status badges (Pending/Graded).
+Courses: Interactive grid featuring icon-coded academic modules.
 
-User Identity: Clean, functional profile management form for student settings.
+Learning Hub: Two-column layout with collapsible syllabus accordions.
 
-🛠 Technical Features
-Layouts: Advanced Flexbox and Grid systems for 100% responsiveness.
-
-Interactivity: Smooth cubic-bezier transitions and hover-lift effects.
-
-Aesthetics: Consistent indigo-accent color palette with refined typography.
-
-Workflow: Professional Git versioning with established v1.0 and v2.0 tags.
-
+Assignment Tracker: Professional data tables with color-coded status badges.
 Developed by Mirthika Siva — Final Release
