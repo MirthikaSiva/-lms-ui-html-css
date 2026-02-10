@@ -8,4 +8,4 @@ University LMS UI using HTML & CSS.
 ## Folder Structure
 * index.html
 * dashboard.html
-* css/
+* css
