@@ -1,19 +1,15 @@
-Project Summary: University LMS
-A professional, client-ready academic portal developed with Vanilla HTML5 and CSS3. This project delivers an elite user experience through minimalist architecture and fluid interactivity.
+🚀 Technical Implementation
+HTML5: Semantic structure for accessibility and SEO.
 
-Key Highlights
-Minimalist Aesthetic: High-contrast design using a monochromatic palette with Indigo accents.
+CSS3: Advanced Flexbox/Grid layouts and Cubic-Bezier transitions.
 
-Interactive UX: Smooth micro-animations and hover-lift effects for a premium feel.
+Git Versioning: Managed through professional branching and tagging (v1.0 to v2.0).
 
-Responsive Layout: Fully optimized for all devices using CSS Grid and Flexbox.
+🛠 Setup & Usage
+Clone the repository.
 
-Functional Modules
-Dashboard: Real-time stat cards and visual progress trackers.
+Open index.html in any modern browser.
 
-Courses: Interactive grid featuring icon-coded academic modules.
+Use the sidebar to navigate through the interactive modules.
 
-Learning Hub: Two-column layout with collapsible syllabus accordions.
-
-Assignment Tracker: Professional data tables with color-coded status badges.
-Developed by Mirthika Siva — Final Release
+Developed by Mirthika Siva — 2026
